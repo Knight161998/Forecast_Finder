@@ -16,7 +16,7 @@ const Inputs = ({ setQuery, setUnits }) => {
 					setQuery({ lat: latitude, lon: longitude });
 				},
 				(error) => {
-					console.error('Error fetching location:', error);
+					// console.error('Error fetching location:', error);
 					alert('Unable to retrieve your location.');
 				}
 			);

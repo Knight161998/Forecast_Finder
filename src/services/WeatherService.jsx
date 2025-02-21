@@ -109,7 +109,7 @@ const getWeatherData = async (infoType, searchParams) => {
 	const url = new URL(`${BASE_URL}${infoType}`);
 	url.search = new URLSearchParams({ ...searchParams, appid: API_KEY });
 
-	console.log(url);
+	// console.log(url);
 	try {
 		const res = await fetch(url);
 		if (!res.ok) {
